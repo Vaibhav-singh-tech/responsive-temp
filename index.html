@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-blogs - Heaven for Bloggers</title>
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<bdy>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span class="logo"><img src="./img/logo.gif" alt="" class="responsive-img"></span>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <input class="formInput" type="text" placeholder="Article Search" id="searchInput">
+            <button class="btn" id="searchButton">Search</button>
+        </div>
+    </nav>
+
+    <div class="content max-width-1 m-auto">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="content-left">
+                <h1>v-blogs - Heaven for Bloggers</h1>
+                <p>This is the site for those who want to fulfill their passion for blogging and pursue a career in vlogging.</p>
+                <div class="image-container">
+                    <img src="./img/hh.jpg" alt="Man typing on a typewriter" class="responsive-img">
+                </div>
+            </div>
+            <div class="content-right"></div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="section hidden">
+            <div class="content-left">
+                <h1>About vBlog</h1>
+                <p>vBlog is a platform designed for bloggers and vloggers to share their experiences and insights. Our goal is to provide a space where creative minds can connect and grow.</p>
+                <div class="image-container">
+                    <img src="./img/vv.jpg" alt="About Us" class="responsive-img">
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section hidden">
+            <div class="content-left">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or feedback, feel free to reach out to us via the contact form below.</p>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- search results -->
+    <section id="search-results" class="section hidden">
+        <div class="content-left">
+            <h1>Search Results</h1>
+            <div id="results-container"></div>
+        </div>
+    </section>
+<!-- footer section  -->
+    <footer class="footer max-width-1 m-auto">
+    </footer>
+
+    <section class="terms max-width-1 m-auto">
+        <h2>Terms & Conditions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+    </section>
+    <script src="./js/index.js"></script>
+  
+    
+</body>
+</html>
+
